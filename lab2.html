@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" minlength="3">
+            <br><br>
+            <label for="birthdate">Date of Birth:</label><br>
+            <input type="date" id="birthdate" name="birthdate" required>
+            <br><br>
+
+
+
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+            <legend>Account Information</legend>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required minlength="8">
+            <br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Location and Gender</legend>
+
+            <label for="country">Country:</label><br>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="jordan">Jordan</option>
+                <option value="palestine">Palestine</option>
+                <option value="egypt">Egypt</option>
+                <option value="saudi">Saudi Arabia</option>
+                <option value="uae">UAE</option>
+            </select>
+            <br><br>
+
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br><br>
+        </fieldset>
+
+        <p>Interests:</p>
+        <input type="checkbox" id="html" name="html" value="html">HTML
+        <br>
+        <input type="checkbox" id="reading" name="reading" value="reading">Reading Novel
+        <br>
+        <input type="checkbox" id="javascript" name="javascript" value="javascript">JavaScript
+        <br>
+        <input type="checkbox" id="css" name="css" value="css">CSS
+        <br>
+        <input type="checkbox" id="travel" name="travel" value="travel">Travel
+        <br>
+        <input type="checkbox" id="coding" name="coding" value="coding">Coding
+
+        <br><br>
+        <fieldset>
+            <legend>Profile Details</legend>
+            <label for="experience">Experience Level:</label><br>
+            <input type="range" id="experience" name="experience" min="0" max="10" step="2" value="5">
+            <br><br>
+
+            <label for="profile">Upload Profile Picture:</label><br>
+            <input type="file" id="profile" name="profile" accept="image/*">
+            <br><br>
+
+            <label for="bio">Short Bio:</label>
+            <br>
+            <br>
+            <textarea id="bio" name="bio" rows="10" cols="50" placeholder="Tell us about yourself!!"
+                required></textarea>
+            <br><br>
+
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and conditions</label>
+            <br><br>
+        </fieldset>
+        <br>
+
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+
+</html>
